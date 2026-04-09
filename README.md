@@ -2,14 +2,6 @@
 
 A Java based 2 player Mancala board game with a graphical user interface.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Game Rules](#game-rules)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Authors](#authors)
-
 ## Overview
 
 Mancala is an ancient board game for 2 players. This implementation provides a GUI for two human players to take turns.
