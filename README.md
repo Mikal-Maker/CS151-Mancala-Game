@@ -1,10 +1,10 @@
 # Mancala Game
 
-A Java based 2 player Mancala board game with a graphical user interface.
+A Java based Mancala board game with a graphical user interface.
 
 ## Overview
 
-Mancala is an ancient board game for 2 players. This implementation provides a GUI for two human players to take turns.
+Mancala is an ancient board game for 2 players. This implementation provides a GUI for players to take turns.
 
 ## Game Rules
 
@@ -21,7 +21,7 @@ Mancala is an ancient board game for 2 players. This implementation provides a G
 
 ## Features
 
-- This game is for two human players using one mouse.
+- This game is for 2 human players, played using a mouse.
 - The program starts with an empty baord and asks the player to choose the number of stones to be placed in each pit. (4 max, 4 would place 4 stones in each pit on the board)
 - An undo function which reverts the board to the state before the last move. (3 max per turn, and allowed to undo again after making a choice)
 - A player chooses a pit by clicking on it Then, the program updates the board according to the game rule explained above.
