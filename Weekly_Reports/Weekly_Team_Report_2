@@ -5,14 +5,16 @@ Team leader of the week: Duc Nguyen
 Team members: Michael Hoshen, Duc Nguyen, Jonathan Gau
 
 Summary
-This week, our team worked on planning how to handle user inputs.
-We completed our class diagram, use cases, and a sequence diagram for a representative use cases.
+This week, our team focused on planning how user input will be handled in the Mancala project and on completing part of the required design documentation. 
+We discussed how to divide the project work among team members and worked on documents that will help guide the implementation stage. 
+By the end of the week, we completed the class diagram, use cases, and a sequence diagram for a representative use case. 
+These materials gave us a clearer structure for the project and helped us better understand how the main parts of the program should interact.
 
 Michael Hoshen
-Completed class diagram + 2 use case sequences.
+Completed the class diagram and 2 use case sequences.
 
 Duc Nguyen
-Completed 5 use case sequences.
+Completed 5 use case sequences and helped organize how the work would be divided among team members.
 
 Jonathan Gau
-Completed sequence diagram for representative use case.
+Completed the sequence diagram for a representative use case.
