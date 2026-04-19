@@ -1,1 +1,9 @@
+Name: Duc Nguyen
 
+Week 1:
+Thurs, 4/10: 0.75 hour - Read through the Mancala project requirements and focused on understanding the overall expectations of the project, especially the game rules, MVC design, undo feature, and the use of the Strategy pattern for different board styles.
+Fri, 4/11: 0.75 hour - Helped come up with task assignments for the team and suggested dividing the work into model/game logic, GUI/view, and controller/strategy responsibilities. I took responsibility for the model/game logic part and began planning how the board state, pits, Mancalas, and stone counts should be represented in the program.
+
+Week 2:
+Fri, 4/17: 1.5 hours - Reviewed the project requirements and worked on planning how user input would be handled in the Mancala project. I also helped organize the team’s tasks and discussed how the work should be divided among members.
+Sat, 4/18: 1.5 hours - Completed 5 use case sequences for the project and continued supporting team coordination for this week’s assigned work.
