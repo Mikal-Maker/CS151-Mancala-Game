@@ -7,3 +7,7 @@ Fri, 4/11: 0.75 hour - Helped come up with task assignments for the team and sug
 Week 2:
 Fri, 4/17: 1.5 hours - Reviewed the project requirements and worked on planning how user input would be handled in the Mancala project. I also helped organize the team’s tasks and discussed how the work should be divided among members.
 Sat, 4/18: 0.75 hours - Completed 5 use case sequences for the project and continued supporting team coordination for this week’s assigned work.
+
+Week 3:
+Thurs, 4/23: 1 hours - Started working on the project by reviewing the use cases, class diagram, and videos where people play to better understand how the Mancala game flow should be handled.
+Fri, 4/24: 1.5 hours - Continued working on the project by starting the coding process for `MancalaModel.java`. I focused on thinking through how the game state and core rules should be represented in code, including player turns and board updates.
