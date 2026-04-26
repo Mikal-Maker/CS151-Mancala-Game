@@ -39,7 +39,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
 
     public void setStyle(BoardStyle style) {
         this.style = style;
-        // update pits 
+        // update pits
     }
 
     @Override
