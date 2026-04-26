@@ -1,19 +1,17 @@
-Monday, 4/20 ~ Friday, 4/24
+Monday, 4/20 - Saturday, 4/25
 
 Team Name: Group 8
 Team leader of the week: Duc Nguyen
 Team members: Michael Hoshen, Duc Nguyen, Jonathan Gau
 
 Summary
-This week, we used the planning of last week to begin coding the project.
-We started coding our assigned part of the project and created a rough frame which we will add more to in the future.
+This week, our team continued working on the Mancala project by moving further into the design and early coding stage. We focused on connecting our earlier design work, such as the use cases and class structure, to the actual classes required for the project. Progress this week included work on the model/game logic portion, planning and beginning the board-related classes, and continuing the overall project organization.
 
 Michael Hoshen
-Began working on the MancalaPit class.
-Began working on the MancalaBoard class.
+Planned and worked on the MancalaPit class, including mutators, accessor, paint methods, and Javadoc comments. Also planned and began the MancalaBoard class, including the constructor and methods for board initialization, controls, and style changes.
 
 Duc Nguyen
-Began coding the model part of this project's MVC.
+Reviewed the use cases, class diagram, and other design materials to better understand how the game flow should be handled in MancalaModel class. Also began working toward the coding phase by focusing on how the game state and core logic should be represented.
 
 Jonathan Gau
-Began working on the Strategy classes of the project.
+Continued working on the style-related portion of the project and reviewed how the board style classes should fit into the overall project structure.
