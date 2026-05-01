@@ -17,7 +17,7 @@ public class MancalaPit extends JComponent {
      * @param idx the pits position on the board
      * @param style the BoardStyle for rendering
      */
-    public MancalaPit(int inx, BoardStyle style) {
+    public MancalaPit(int idx, BoardStyle style) {
         this.idx = idx;
         this.stones = 0;
         this.mancala = (index == 6 || index == 13);
@@ -46,7 +46,7 @@ public class MancalaPit extends JComponent {
      * @return pit index
      */
     public int getIndex() {
-        return index;
+        return idx;
     }
 
     /**

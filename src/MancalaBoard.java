@@ -18,9 +18,9 @@ public class MancalaBoard extends JPanel implements ChangeListener {
      * @param model the MancalaModel
      * @param style the BoardStyle strategy
      */
-    public MancalaBoard(MancalaModel model, BoardStyle stye) {
+    public MancalaBoard(MancalaModel model, BoardStyle style) {
         this.model = model;
-        this.style = stye;
+        this.style = style;
         this.pits = new MancalaPit[14];
         model.addChangeListener(this);
         setLayout(new BorderLayout());
@@ -53,7 +53,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
      * Builds the control panel with undo button.
      */
     public void initializeControls() {
-        undo = new JButton("Undo");
+        JButton undo = new JButton("Undo");
         undo.addActionListener(e -> model.undo());
         JPanel controlPanel = new JPanel();
         controlPanel.add(undo);
