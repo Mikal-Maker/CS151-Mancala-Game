@@ -6,4 +6,4 @@ Th, 4/30: Finished working on the interface for the styles classes. Began workin
 Fri, 5/1: Finished Style1, close to finish Style2.
 
 Week 5:
-Tu, 5/5 ~ Fri, 5/6: Fixed bugs on both Style1 and Style2.
+Tu, 5/5 ~ Fri, 5/6: Fixed bugs on both Style1 and Style2, particularly in the drawMancala() method.
