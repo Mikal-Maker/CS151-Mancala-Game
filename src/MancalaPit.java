@@ -62,7 +62,7 @@ public class MancalaPit extends JComponent {
     }
 
     /**
-     * Draws the pit using the BoardStyle.
+     * Draws the pit using the BoardStyle as well as their labels.
      * @param g the graphics
      */
     @Override
@@ -74,7 +74,7 @@ public class MancalaPit extends JComponent {
         } else {
             style.drawMancala(g2, getWidth(), getHeight(), stones);
         }
-        g2.setColor(Color.WHITE);
+        g2.setColor(Color.BLACK);
         g2.setFont(new Font("Arial", Font.BOLD, 14));
         
         FontMetrics font = g2.getFontMetrics();
