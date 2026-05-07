@@ -27,6 +27,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
         setLayout(new BorderLayout());
         initializeBoard();
         initializeControls();
+        stateChanged(new ChangeEvent(model));
     }
 
     /**
