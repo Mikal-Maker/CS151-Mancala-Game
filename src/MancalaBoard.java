@@ -141,7 +141,18 @@ public class MancalaBoard extends JPanel implements ChangeListener {
      */
     @Override
     public void stateChanged(ChangeEvent e) {
-    	turnLabel.setText("Player " + model.getCurrentPlayer() + "'s turn");
+    	if(model.isGameOver()) {
+    		char winner = model.getWinner();
+    		
+    		if(winner == 'T') {
+    			turnLabel.setText("Tie. No Winners");
+    		} else {
+    			turnLabel.setText("Player " + winner + " wins.");
+    		}
+    	} else {
+    		turnLabel.setText("Player " + model.getCurrentPlayer() + "'s turn");
+    	}
+    	
         int board[] = model.getBoard();
         for (int i = 0; i < board.length; i++) {
             pits[i].setStones(board[i]);
