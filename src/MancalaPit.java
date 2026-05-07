@@ -11,17 +11,20 @@ public class MancalaPit extends JComponent {
     private int idx;
     private boolean mancala;
     private BoardStyle style;
+    
+    private String label;
 
     /**
      * Constructs a MancalaPit with a given index and style.
      * @param idx the pits position on the board
      * @param style the BoardStyle for rendering
      */
-    public MancalaPit(int idx, BoardStyle style) {
+    public MancalaPit(int idx, String label, BoardStyle style) {
         this.idx = idx;
         this.stones = 0;
-        this.mancala = (index == 6 || index == 13);
+        this.mancala = (idx == 6 || idx == 13);
         this.style = style;
+        this.label = label;
     }
 
     /**
@@ -64,12 +67,20 @@ public class MancalaPit extends JComponent {
      */
     @Override
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
+    	Graphics2D g2 = (Graphics2D) g;
+        super.paintComponent(g2);
         if (!mancala) {
-            style.drawPit(g, getWidth(), getHeight(), stones);
+            style.drawPit(g2, getWidth(), getHeight(), stones);
         } else {
-            style.drawMancala(g, getWidth(), getHeight(), stones);
+            style.drawMancala(g2, getWidth(), getHeight(), stones);
         }
+        g2.setColor(Color.WHITE);
+        g2.setFont(new Font("Arial", Font.BOLD, 14));
+        
+        FontMetrics font = g2.getFontMetrics();
+        
+        int textWidth = font.stringWidth(label);
+        
+        g2.drawString(label, (getWidth() - textWidth) / 2, getHeight() - 10);
     }
 }
-
