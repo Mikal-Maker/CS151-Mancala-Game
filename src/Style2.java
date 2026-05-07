@@ -1,5 +1,9 @@
 import java.awt.*;
 
+/**
+ * Style2 class that implements BoardStyle. This class displays a gray background for the Mancala.
+ * @author Jonathan Gau
+ */
 public class Style2 implements BoardStyle {
 	
 	/**
