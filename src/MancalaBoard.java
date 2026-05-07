@@ -47,7 +47,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
     	//create top row of the pits starting from B6 until B1
     	for(int i = 12; i >= 7; i--) {
     		//calculate the label numbers for pits
-    		String label = "B" + (13 - i);
+    		String label = "B" + (i - 6);
     		
     		//create pits
     		pits[i] = new MancalaPit(i, label, style);
