@@ -13,6 +13,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
     private MancalaModel model;
     private MancalaPit[] pits;
     private BoardStyle style;
+    private JLabel turnLabel;
 
     /**
      * Constructs the MancalaBoard with a model and style.
@@ -140,6 +141,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
      */
     @Override
     public void stateChanged(ChangeEvent e) {
+    	turnLabel.setText("Player " + model.getCurrentPlayer() + "'s turn");
         int board[] = model.getBoard();
         for (int i = 0; i < board.length; i++) {
             pits[i].setStones(board[i]);
