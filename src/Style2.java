@@ -1,7 +1,7 @@
 import java.awt.*;
 
 /**
- * Style2 class that implements BoardStyle. This class displays a gray background for the Mancala.
+ * Style2 class that implements BoardStyle. This class displays a yellow background for the Mancala.
  * @author Jonathan Gau
  */
 public class Style2 implements BoardStyle {
@@ -24,10 +24,10 @@ public class Style2 implements BoardStyle {
 		int x = (w - size) / 2;
 		int y = (h - size) / 2;
 		
-		g2.setColor(new Color(60, 63, 65));
+		g2.setColor(new Color(254, 220, 86));
 		g2.fillOval(x,  y,  size, size);
 		
-		g2.setColor(Color.LIGHT_GRAY);
+		g2.setColor(Color.YELLOW);
 		g2.drawOval(x,  y, size, size);
 		
 		drawStones(g2, x, y, size, size, stones);
@@ -52,10 +52,10 @@ public class Style2 implements BoardStyle {
 		int width = w - 2 * padding;
 		int height = h - 2 * padding;
 		
-		g2.setColor(new Color(60, 63, 65));
+		g2.setColor(new Color(254, 220, 86));
 		g2.fillRoundRect(x, y, width, height, 30, 30);
 		
-		g2.setColor(Color.GRAY);
+		g2.setColor(Color.YELLOW);
 		g2.drawRoundRect(x,  y, width, height, 30, 30);
 		
 		drawStones(g2, x, y, width, height, stones);
