@@ -1,5 +1,9 @@
 import java.awt.*;
 
+/**
+ * Interface for Strategy pattern.
+ * @author Jonathan Gau
+ */
 public interface BoardStyle {
 	/**
 	 * Draw a pit on the board.
