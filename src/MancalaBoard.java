@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -32,8 +33,66 @@ public class MancalaBoard extends JPanel implements ChangeListener {
      * Builds the pit grid layout and adds listeners.
      */
     public void initializeBoard() {
-        JPanel boardPanel = new JPanel(new GridLayout(2, 10));
+    	JPanel boardCenter = new JPanel(new GridLayout(2, 6, 10, 10));
+    	
+    	//create pit for the mancala on the left
+    	pits[13] = new MancalaPit(13, "B", style);
+    	pits[13].setPreferredSize(new Dimension(100, 250));
+    	
+    	//create pit for the mancala on the right
+    	pits[6] = new MancalaPit(6, "A", style);
+    	pits[6].setPreferredSize(new Dimension(100, 250));
+    	
+    	//create top row of the pits starting from B6 until B1
+    	for(int i = 12; i >= 7; i--) {
+    		//calculate the label numbers for pits
+    		String label = "B" + (13 - i);
+    		
+    		//create pits
+    		pits[i] = new MancalaPit(i, label, style);
+    		
+    		//this variable is used below in addMouseListener, since it needs to be (effectively) final,
+    		//I created a variable for it instead of using i directly since that will cause an error.
+    		int idx = i;
+    		
+    		//add mouseListener to the pits
+    		pits[i].addMouseListener(new MouseAdapter() {
+    			public void mouseClicked(MouseEvent e) {
+    				model.move(idx);
+    			}
+    		});
+    		
+    		//add pits to the board
+    		boardCenter.add(pits[i]);
+    	}
+    	
+    	//create bottom row of the pits starting from A1 until A6
+    	for(int i = 0; i <= 5; i++) {
+    		//the code in here is the same as the for loop above, look at the above loop for explanations
+    		String label = "A" + (i + 1);
 
+    		pits[i] = new MancalaPit(i, label, style);
+    		
+    		
+    		int idx = i;
+    		
+    		pits[i].addMouseListener(new MouseAdapter() {
+    			public void mouseClicked(MouseEvent e) {
+    				model.move(idx);
+    			}
+    		});
+    		
+    		boardCenter.add(pits[i]);
+    	}
+    	
+    	//add mancala (left) to the left of the board
+    	add(pits[13], BorderLayout.WEST);
+    	//add the pits to the center of the board
+    	add(boardCenter, BorderLayout.CENTER);
+    	//add mancala(right) to the right of the board
+    	add(pits[6], BorderLayout.EAST);
+    	/*
+        JPanel boardPanel = new JPanel(new GridLayout(2, 10));
         for (int i = 0; i < pits.length; i++) {
             pits[i] = new MancalaPit(i, style);
             int idx = i;
@@ -47,6 +106,7 @@ public class MancalaBoard extends JPanel implements ChangeListener {
             boardPanel.add(pits[i]);
         }
         add(boardPanel, BorderLayout.CENTER);
+        */
     }
 
     /**
