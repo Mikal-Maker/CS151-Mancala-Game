@@ -116,8 +116,10 @@ public class MancalaBoard extends JPanel implements ChangeListener {
     public void initializeControls() {
         JButton undo = new JButton("Undo");
         undo.addActionListener(e -> model.undo());
+        turnLabel = new JLabel("Select a pit to decide the turn order");
         JPanel controlPanel = new JPanel();
-        controlPanel.add(undo);
+        controlPanel.add(turnLabel, BorderLayout.WEST);
+        controlPanel.add(undo, BorderLayout.EAST);
         add(controlPanel, BorderLayout.SOUTH);
     }
 
