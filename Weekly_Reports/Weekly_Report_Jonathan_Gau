@@ -1,9 +1,11 @@
 Week 3:
-SAT, 4/25: Planned the Strategy interface, it's Concrete classes as well as coding the prototypes of the Strategy part of the project, such as it's Interface and Concrete classes.
+SAT, 4/25: Planned the Strategy interface, it's Concrete classes as well as coding the prototypes of the Strategy part of the project, such as it's Interface and Concrete classes. (approximately 1 hour)
 
 Week 4:
-Th, 4/30: Finished working on the interface for the styles classes. Began working on the Concrete Styles classes.
-Fri, 5/1: Finished Style1, close to finish Style2.
+Th, 4/30: Finished working on the interface for the styles classes. Began working on the Concrete Styles classes. (approximately 1 hour)
+Fri, 5/1: Finished Style1, close to finish Style2. (approximately 5 hours)
 
 Week 5:
-Tu, 5/5 ~ Fri, 5/6: Fixed bugs on both Style1 and Style2, particularly in the drawMancala() method.
+Tu, 5/5 ~ Wed, 5/6: Fixed bugs on both Style1 and Style2, particularly in the drawMancala() method. (approximately 5 hours)
+Wed, 5/6: Fixed bugs and made updates to Style1 and Style2. Added labels to MancalaPit and MancalaBoard. Added victory message to MancalaBoard. Fixed bugs in MancalaPit and MancalaBoard. (approximately 8~10 hours)
+Thu, 5/7: Finalized sequence diagram for one use case. (approximately 30~40 minutes)
