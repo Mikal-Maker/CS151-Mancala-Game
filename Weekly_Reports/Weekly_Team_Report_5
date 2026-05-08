@@ -11,9 +11,13 @@ We made changes and additions to the project based on the rubrics given on Canva
 By Wednesday May 6, with a few extra tests and debugging, our project is finished.
 
 Michael Hoshen
-
+Resolved bugs in MancalaPit and MancalaBoard classes.
+Conneted MancalaPit and MancalaBoard to other classes in order to match changes.
 
 Duc Nguyen
-
+Continued working on MancalaBoard and finished the class.
+Fixed bugs in the code. Helped resolve issues related to method calls, constructor changes, and board updates in MancalaPit and MancalaBoard.
 
 Jonathan Gau
+Fixed bugs on Strategy classes.
+Debugged and added labels to MancalaPit and MancalaBoard. Added texts to display turn order and victory messagefor player's convenience.
