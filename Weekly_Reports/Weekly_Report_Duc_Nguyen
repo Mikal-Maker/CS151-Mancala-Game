@@ -17,5 +17,7 @@ Mon, 4/27: 1.5 hours - Continued working on the Mancala project by reviewing the
 Thurs, 4/30: 1.5 hours - Began adding more structure to the model/game logic portion of the project. I focused on planning the methods needed for basic gameplay, such as moving stones, checking valid moves, switching turns, and preparing the model to notify the board when the game state changes.
 
 Week 5:
-Wed, 5/6: 12 hours - Continued working on `MancalaModel.java` and finished my assigned model/game logic portion of the project. I completed the main methods needed for the model, including handling player moves, updating the board state, switching turns, undo support, and notifying the board when changes happen. Helped team members test the project and fix bugs in the code. I checked how `MancalaModel.java` connected with the other classes, especially `MancalaBoard.java` and `MancalaPit.java`, and helped resolve issues related to method calls, constructor changes, and board updates.
+Wed, 5/6: 12 hours - Continued working on `MancalaModel.java` and finished my assigned model/game logic portion of the project. I completed the main methods needed for the model, including handling player moves, updating the board state, switching turns, undo support, and notifying the board when changes happen. 
+Helped team members test the project and fix bugs in the code. I checked how `MancalaModel.java` connected with the other classes, especially `MancalaBoard.java` and `MancalaPit.java`, and helped resolve issues related to method calls, constructor changes, and board updates.
+
 Thurs, 5/7: 1 hour - Started design and then completed the use cases
